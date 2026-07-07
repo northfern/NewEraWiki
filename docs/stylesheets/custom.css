@@ -1,0 +1,252 @@
+/* ============================================================
+   ПЕРЕКЛЮЧЕНИЕ ИЗОБРАЖЕНИЙ ПО ТЕМЕ
+   ============================================================ */
+.theme-light,
+.theme-dark {
+  display: none;
+}
+
+[data-md-color-scheme="default"] .theme-light {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+[data-md-color-scheme="slate"] .theme-dark {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================================
+   СКРЫТИЕ НАЗВАНИЯ САЙТА В ЛЕВОМ МЕНЮ
+   ============================================================ */
+.md-nav--primary .md-nav__title[for="__drawer"] {
+  display: none;
+}
+
+/* ============================================================
+   НЕЙТРАЛЬНАЯ ШАПКА И ВКЛАДКИ
+   ============================================================ */
+.md-header {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: none;
+}
+
+/* НЕ трогаем .md-icon — это ломает переключатель тем! */
+
+.md-header .md-header__title {
+  color: var(--md-default-fg-color);
+}
+
+.md-header .md-search__input,
+.md-header .md-search__icon {
+  color: var(--md-default-fg-color);
+}
+
+.md-tabs {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-tabs__link {
+  color: var(--md-default-fg-color--light);
+  opacity: 0.7;
+}
+
+.md-tabs__link--active {
+  color: var(--md-default-fg-color);
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* ============================================================
+   ИСПРАВЛЕНИЕ ПОИСКА
+   ============================================================ */
+/* Светлая тема */
+.md-search__input {
+  background-color: #f5f5f5;
+  color: #333333;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.md-search__input::placeholder {
+  color: #757575;
+}
+
+.md-search__input:hover {
+  background-color: #eeeeee;
+}
+
+.md-search__input:focus {
+  background-color: #ffffff;
+  border-color: var(--md-accent-fg-color);
+  outline: none;
+}
+
+.md-search__icon {
+  color: #757575;
+}
+
+.md-search__output {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.md-search-result__item {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.md-search-result__item:hover {
+  background-color: #f9f9f9;
+}
+
+.md-search-result__item a {
+  color: #333333;
+}
+
+.md-search-result__item a:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Тёмная тема */
+[data-md-color-scheme="slate"] .md-search__input {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border-color: #404040;
+}
+
+[data-md-color-scheme="slate"] .md-search__input::placeholder {
+  color: #b0b0b0;
+}
+
+[data-md-color-scheme="slate"] .md-search__input:hover {
+  background-color: #363636;
+}
+
+[data-md-color-scheme="slate"] .md-search__input:focus {
+  background-color: #404040;
+  border-color: var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-search__icon {
+  color: #b0b0b0;
+}
+
+[data-md-color-scheme="slate"] .md-search__output {
+  background-color: #2d2d2d;
+  border-color: #404040;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+[data-md-color-scheme="slate"] .md-search-result__item {
+  border-bottom-color: #404040;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__item:hover {
+  background-color: #363636;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__item a {
+  color: #ffffff;
+}
+
+/* ============================================================
+   УЛУЧШЕННАЯ ЧИТАЕМОСТЬ (для лора)
+   ============================================================ */
+.md-typeset {
+  line-height: 1.7;
+}
+
+.md-typeset p {
+  margin-bottom: 1.5em;
+}
+
+/* ============================================================
+   АТМОСФЕРНЫЕ ЦИТАТЫ
+   ============================================================ */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-accent-fg-color);
+  background: var(--md-default-bg-color--lighter);
+  padding: 0.5em 1em;
+  font-style: italic;
+  border-radius: 0 4px 4px 0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background: var(--md-default-bg-color--darker);
+}
+
+/* ============================================================
+   УЛУЧШЕННЫЕ ТАБЛИЦЫ
+   ============================================================ */
+.md-typeset table:not([class]) {
+  font-size: 0.9rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-primary-fg-color--light);
+  color: var(--md-default-bg-color);
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background: var(--md-default-bg-color--lighter);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
+  background: var(--md-default-bg-color--darker);
+}
+
+/* ============================================================
+   ИЗОБРАЖЕНИЯ С ТЕНЬЮ
+   ============================================================ */
+.md-typeset figure img {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset figure img {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* ============================================================
+   КАРТОЧКИ (GRID CARDS)
+   ============================================================ */
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.md-typeset .grid.cards ul li p {
+  margin: 0.5em 0;
+}
+
+/* ============================================================
+   СКРОЛЛБАРЫ (опционально)
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--md-default-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--md-primary-fg-color--light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--md-accent-fg-color);
+}
