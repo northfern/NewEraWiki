@@ -4,10 +4,12 @@
 site_name: Большая Энциклопедия NewEra и Эррландии
 site_description: "Лор, персонажи и история мира NewEra и Эррландии"
 site_author: "NorthFern"
-site_url: https://твой-ник.github.io/rp-wiki/
-repo_url: https://github.com/твой-ник/rp-wiki
+site_url: https://northfern.github.io/NewEraWiki/
+repo_url: https://github.com/northfern/NewEraWiki
+edit_uri: edit/main/docs/
+view_uri: raw/main/docs/
 
-# Копирайт (ТОЛЬКО здесь, НЕ в extra!)
+# Копирайт
 copyright: >
   <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">
     <img src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" alt="CC BY-SA 4.0" style="vertical-align: middle; margin-right: 4px;">
@@ -25,7 +27,7 @@ theme:
   name: material
   language: ru
   
-  # Шрифты (Inter + JetBrains Mono — современнее)
+  # Шрифты
   font:
     text: Inter
     code: JetBrains Mono
@@ -36,15 +38,14 @@ theme:
   # Фавикон
   favicon: images/favicon.png
   
-  # 3-позиционный переключатель тем (ПРАВИЛЬНАЯ СТРУКТУРА!)
   palette:
-    # 1. Автоматическая тема (по умолчанию)
+    # 1. Автоматическая тема
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Переключить на светлую тему
 
-    # 2. Светлая тема (ОБЯЗАТЕЛЬНО с media!)
+    # 2. Светлая тема
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: brown
@@ -53,7 +54,7 @@ theme:
         icon: material/brightness-7
         name: Переключить на темную тему
 
-    # 3. Тёмная тема (ОБЯЗАТЕЛЬНО с media!)
+    # 3. Тёмная тема
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: brown
@@ -66,13 +67,10 @@ theme:
   features:
     - content.action.edit
     - content.action.view
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.prune
     - navigation.top
-    - navigation.footer
     - search.highlight
     - search.suggest
     - content.code.copy
@@ -84,6 +82,10 @@ theme:
 plugins:
   - search
   - awesome-pages
+  - git-revision-date-localized:
+      type: date          # Формат даты
+      locale: ru          # Русский язык
+      fallback_to_build_date: true  # Если Git недоступен
 
 # ============================================================
 # Расширения Markdown
@@ -114,15 +116,7 @@ markdown_extensions:
 # ============================================================
 extra:
   generator: true  # Показывать "Made with Material for MkDocs"
-  
-  # Социальные ссылки (раскомментируй и заполни)
-  # social:
-  #   - icon: fontawesome/brands/vk
-  #     link: https://vk.com/твоя_группа
-  #     name: ВКонтакте
-  #   - icon: fontawesome/brands/telegram
-  #     link: https://t.me/твой_канал
-  #     name: Telegram
-  #   - icon: fontawesome/brands/github
-  #     link: https://github.com/твой-ник
-  #     name: GitHub
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/pvYxRYx5Sy
+      name: Discord
