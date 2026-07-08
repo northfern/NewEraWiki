@@ -1,6 +1,3 @@
-# ============================================================
-# Основная информация
-# ============================================================
 site_name: Большая Энциклопедия NewEra и Эррландии
 site_description: "Лор, персонажи и история мира NewEra и Эррландии"
 site_author: "NorthFern"
@@ -9,7 +6,6 @@ repo_url: https://github.com/northfern/NewEraWiki
 edit_uri: edit/main/docs/
 view_uri: raw/main/docs/
 
-# Копирайт
 copyright: >
   <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">
     <img src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" alt="CC BY-SA 4.0" style="vertical-align: middle; margin-right: 4px;">
@@ -17,35 +13,24 @@ copyright: >
   </a>
   · 2026 Большая Энциклопедия NewEra и Эррландии
 
-# ============================================================
-# Стили и тема
-# ============================================================
 extra_css:
   - stylesheets/custom.css
 
 theme:
   name: material
   language: ru
-  
-  # Шрифты
   font:
     text: Inter
     code: JetBrains Mono
-  
-  # Логотип
   logo: images/favicon.png
-  
-  # Фавикон
   favicon: images/favicon.png
   
   palette:
-    # 1. Автоматическая тема
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Переключить на светлую тему
 
-    # 2. Светлая тема
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: brown
@@ -54,7 +39,6 @@ theme:
         icon: material/brightness-7
         name: Переключить на темную тему
 
-    # 3. Тёмная тема
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: brown
@@ -63,7 +47,6 @@ theme:
         icon: material/brightness-4
         name: Переключить на системную тему
   
-  # Функции Material
   features:
     - content.action.edit
     - content.action.view
@@ -76,9 +59,6 @@ theme:
     - content.code.copy
     - content.code.annotate
 
-# ============================================================
-# Плагины
-# ============================================================
 plugins:
   - search
   - awesome-pages
@@ -87,9 +67,6 @@ plugins:
       locale: ru          # Русский язык
       fallback_to_build_date: true  # Если Git недоступен
 
-# ============================================================
-# Расширения Markdown
-# ============================================================
 markdown_extensions:
   - toc:
       permalink: true
@@ -110,12 +87,9 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-
-# ============================================================
-# Дополнительные настройки
-# ============================================================
+  
 extra:
-  generator: true  # Показывать "Made with Material for MkDocs"
+  generator: true
   social:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/pvYxRYx5Sy
