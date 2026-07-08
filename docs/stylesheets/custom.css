@@ -35,8 +35,6 @@
   box-shadow: none;
 }
 
-/* НЕ трогаем .md-icon — это ломает переключатель тем! */
-
 .md-header .md-header__title {
   color: var(--md-default-fg-color);
 }
@@ -44,23 +42,6 @@
 .md-header .md-search__input,
 .md-header .md-search__icon {
   color: var(--md-default-fg-color);
-}
-
-.md-tabs {
-  background-color: var(--md-default-bg-color);
-  color: var(--md-default-fg-color);
-  border-bottom: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.md-tabs__link {
-  color: var(--md-default-fg-color--light);
-  opacity: 0.7;
-}
-
-.md-tabs__link--active {
-  color: var(--md-default-fg-color);
-  opacity: 1;
-  font-weight: 600;
 }
 
 /* ============================================================
@@ -250,3 +231,4 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--md-accent-fg-color);
 }
+
