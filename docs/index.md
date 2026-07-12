@@ -6,10 +6,8 @@ hide:
 
 
 # Большая Энциклопедия NewEra и Эррландии
-<div align="center" markdown>
 ![](images/TAS-light.png){ .theme-light loading=lazy }
 ![](images/TAS-dark.png){ .theme-dark loading=lazy }
-</div>
 
 **Большая Энциклопедия NewEra и Эррландии** — это открытый архив знаний о Эррландии, созданном сообществом игроков. Здесь вы найдёте:
 
