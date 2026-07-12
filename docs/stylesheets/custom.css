@@ -232,3 +232,121 @@
   background: var(--md-accent-fg-color);
 }
 
+/* ============================================================
+   КАСТОМНЫЕ ADMONITIONS
+   ============================================================ */
+
+/* ОДОБРЕНО */
+.md-typeset .admonition.approved,
+.md-typeset details.approved {
+  border-color: #4caf50;
+}
+.md-typeset .approved > .admonition-title,
+.md-typeset .approved > summary {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-color: #4caf50;
+}
+.md-typeset .approved > .admonition-title::before,
+.md-typeset .approved > summary::before {
+  background-color: #4caf50;
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>');
+}
+
+/* НА РАССМОТРЕНИИ */
+.md-typeset .admonition.pending,
+.md-typeset details.pending {
+  border-color: #ff9800;
+}
+.md-typeset .pending > .admonition-title,
+.md-typeset .pending > summary {
+  background-color: rgba(255, 152, 0, 0.1);
+  border-color: #ff9800;
+}
+.md-typeset .pending > .admonition-title::before,
+.md-typeset .pending > summary::before {
+  background-color: #ff9800;
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>');
+}
+
+/* ЕРЕТИЧЕСКОЕ */
+.md-typeset .admonition.heretical,
+.md-typeset details.heretical {
+  border-color: #f44336;
+}
+.md-typeset .heretical > .admonition-title,
+.md-typeset .heretical > summary {
+  background-color: rgba(244, 67, 54, 0.1);
+  border-color: #f44336;
+}
+.md-typeset .heretical > .admonition-title::before,
+.md-typeset .heretical > summary::before {
+  background-color: #f44336;
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/></svg>');
+}
+
+/* РАССЕКРЕЧЕНО */
+.md-typeset .admonition.declassified,
+.md-typeset details.declassified {
+  border-color: #9c27b0;
+}
+.md-typeset .declassified > .admonition-title,
+.md-typeset .declassified > summary {
+  background-color: rgba(156, 39, 176, 0.1);
+  border-color: #9c27b0;
+}
+.md-typeset .declassified > .admonition-title::before,
+.md-typeset .declassified > summary::before {
+  background-color: #9c27b0;
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>');
+}
+
+/* ВРАЖЕСКАЯ ПРОПАГАНДА */
+.md-typeset .admonition.propaganda,
+.md-typeset details.propaganda {
+  border-color: #607d8b;
+}
+.md-typeset .propaganda > .admonition-title,
+.md-typeset .propaganda > summary {
+  background-color: rgba(96, 125, 139, 0.1);
+  border-color: #607d8b;
+}
+.md-typeset .propaganda > .admonition-title::before,
+.md-typeset .propaganda > summary::before {
+  background-color: #607d8b;
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>');
+}
+
+/* ЗААРХИВИРОВАНО */
+.md-typeset .admonition.archived,
+.md-typeset details.archived {
+  border-color: #795548;
+}
+.md-typeset .archived > .admonition-title,
+.md-typeset .archived > summary {
+  background-color: rgba(121, 85, 72, 0.1);
+  border-color: #795548;
+}
+.md-typeset .archived > .admonition-title::before,
+.md-typeset .archived > summary::before {
+  background-color: #795548;
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM12 17.5L6.5 12H10v-2h4v2h3.5L12 17.5zM5.12 5l.87-1h12l.88 1H5.12z"/></svg>');
+}
+
+
+/* ============================================================
+   СТИЛИЗАЦИЯ ЗАГОЛОВКОВ СЕКЦИЙ (navigation.sections)
+   ============================================================ */
+
+/* Базовый стиль заголовка секции */
+.md-nav__item--section > .md-nav__link {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.4em;
+}
+
+@media screen and (max-width: 768px) {
+  /* Убираем линию-разделитель на мобильных */
+  .md-nav__item--section > .md-nav__link {
+    border-bottom: none !important;
+}
+
+
