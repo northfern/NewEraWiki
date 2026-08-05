@@ -1,16 +1,22 @@
+locale: ru
+
 backend:
   name: github
   repo: northfern/NewEraWiki
   branch: main
   base_url: https://sveltia-cms-auth.lthaeshenl.workers.dev/
-  open_authoring: true           
+  open_authoring: true
 
-publish_mode: editorial_workflow   
+publish_mode: editorial_workflow
 
-media_folder: "docs/images"   
-public_folder: "/images"      
+media_folder: "docs/images"
+public_folder: "/images"
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
 collections:
-
   - name: books
     label: "Книги"
     label_singular: "Книга"
@@ -22,14 +28,13 @@ collections:
       - { name: title, label: "Название", widget: string }
       - { name: author, label: "Автор текста", widget: string, required: false }
       - { name: date, label: "Дата", widget: string, required: false,
-          hint: "В кавычках: \"12 мая 2026\"" }
+          hint: 'В кавычках: "12 мая 2026"' }
       - { name: source, label: "Источник переноса (URL)", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
 
   - name: characters
     label: "Личности"
     folder: "docs/characters"
-    nested: true                   
     create: true
     slug: "{{slug}}"
     summary: "{{title}}"
@@ -40,12 +45,10 @@ collections:
       - { name: author, label: "Автор текста", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
 
-
   - name: cities
     label: "Города"
     label_singular: "Город"
     folder: "docs/cities"
-    nested: true
     create: true
     slug: "{{slug}}"
     fields:
@@ -53,7 +56,6 @@ collections:
       - { name: state, label: "Государство", widget: string, required: false }
       - { name: author, label: "Автор текста", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
-
 
   - name: documents
     label: "Документы"
@@ -69,12 +71,10 @@ collections:
       - { name: author, label: "Автор текста", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
 
-
   - name: events
     label: "События и войны"
     label_singular: "Событие"
     folder: "docs/events"
-    nested: true                    
     create: true
     slug: "{{slug}}"
     fields:
@@ -85,10 +85,8 @@ collections:
         label: "Тип"
         widget: select
         options:
-          - label: "Война / операция"
-            value: war
-          - label: "Политическое событие"
-            value: occasion
+          - { label: "Война / операция", value: war }
+          - { label: "Политическое событие", value: occasion }
       - name: period
         label: "Период"
         widget: string
@@ -97,12 +95,10 @@ collections:
         label: "Текст"
         widget: markdown
 
-
   - name: organisations
     label: "Организации"
     label_singular: "Организация"
     folder: "docs/organisations"
-    nested: true                    
     create: true
     slug: "{{slug}}"
     fields:
@@ -113,12 +109,10 @@ collections:
       - { name: author, label: "Автор текста", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
 
-
   - name: symbols
     label: "Символика"
     label_singular: "Символ"
     folder: "docs/symbols"
-    nested: true
     create: true
     slug: "{{slug}}"
     fields:
@@ -128,12 +122,10 @@ collections:
       - { name: state, label: "Принадлежность", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
 
-
   - name: termins
     label: "Термины и идеологии"
     label_singular: "Термин"
     folder: "docs/termins"
-    nested: true                    
     create: true
     slug: "{{slug}}"
     fields:
