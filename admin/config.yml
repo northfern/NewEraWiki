@@ -2,7 +2,7 @@ backend:
   name: github
   repo: northfern/NewEraWiki
   branch: main
-  app_id: "Ov23liDrVuZE1xiZKyjQ"
+  app_id: https://sveltia-cms-auth.lthaeshenl.workers.dev/
   open_authoring: true           
 
 publish_mode: editorial_workflow   
