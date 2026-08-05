@@ -2,13 +2,14 @@ backend:
   name: github
   repo: northfern/NewEraWiki
   branch: main
-  base_url: https://sveltia-cms-auth.lthaeshenl.workers.dev/
-  open_authoring: true           
+  base_url: https://sveltia-cms-auth.lthaeshenl.workers.dev
+  open_authoring: true
 
-publish_mode: editorial_workflow   
+publish_mode: editorial_workflow
 
-media_folder: "docs/images"   
-public_folder: "/images"      
+media_folder: "docs/images"
+public_folder: "/images"
+
 collections:
 
   - name: books
@@ -41,12 +42,11 @@ collections:
       - { name: author, label: "Автор текста", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
 
-
   - name: cities
     label: "Города"
     label_singular: "Город"
     folder: "docs/cities"
-    nested: 
+    nested:
       depth: 100
     create: true
     slug: "{{slug}}"
@@ -55,7 +55,6 @@ collections:
       - { name: state, label: "Государство", widget: string, required: false }
       - { name: author, label: "Автор текста", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
-
 
   - name: documents
     label: "Документы"
@@ -71,12 +70,11 @@ collections:
       - { name: author, label: "Автор текста", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
 
-
   - name: events
     label: "События и войны"
     label_singular: "Событие"
     folder: "docs/events"
-    nested: 
+    nested:
       depth: 100
     create: true
     slug: "{{slug}}"
@@ -100,12 +98,11 @@ collections:
         label: "Текст"
         widget: markdown
 
-
   - name: organisations
     label: "Организации"
     label_singular: "Организация"
     folder: "docs/organisations"
-    nested: 
+    nested:
       depth: 100
     create: true
     slug: "{{slug}}"
@@ -117,12 +114,11 @@ collections:
       - { name: author, label: "Автор текста", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
 
-
   - name: symbols
     label: "Символика"
     label_singular: "Символ"
     folder: "docs/symbols"
-    nested: 
+    nested:
       depth: 100
     create: true
     slug: "{{slug}}"
@@ -133,12 +129,11 @@ collections:
       - { name: state, label: "Принадлежность", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
 
-
   - name: termins
     label: "Термины и идеологии"
     label_singular: "Термин"
     folder: "docs/termins"
-    nested: 
+    nested:
       depth: 100
     create: true
     slug: "{{slug}}"
