@@ -18,7 +18,7 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../lore/documents/">
+        <link rel="next" href="../organisations/authory/%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%82%D1%83%D1%80%D0%B0%20%281%20NE%29/">
       
       
         
@@ -63,6 +63,32 @@
 
     
     
+  <!-- Авторство: передаём из frontmatter в meta-теги -->
+  
+  
+  
+
+  <!-- Скрытие сайдбара без мигания -->
+  <script>
+    if (localStorage.getItem("nav-hidden") === "true") {
+      document.documentElement.classList.add("nav-hidden");
+    }
+  </script>
+  <style>
+    @media screen and (min-width: 76.25em) {
+      .nav-hidden .md-sidebar--primary {
+        margin-left: -12.1rem;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .nav-hidden .md-sidebar--secondary {
+        width: 12.1rem;
+        flex-shrink: 0;
+      }
+    }
+  </style>
+
   </head>
   
   
@@ -422,15 +448,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#markdown" class="md-nav__link">
+  <a href="#2-markdown-markdown" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Основы Markdown
+        2. Основы Markdown {markdown}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Основы Markdown">
+    <nav class="md-nav" aria-label="2. Основы Markdown {markdown}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -483,15 +509,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#3-material-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Фишки нашего движка (Material)
+        3. Фишки нашего движка (Material) {features}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Фишки нашего движка (Material)">
+    <nav class="md-nav" aria-label="3. Фишки нашего движка (Material) {features}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -555,15 +581,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#images" class="md-nav__link">
+  <a href="#4-images" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Работа с изображениями
+        4. Работа с изображениями {images}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Работа с изображениями">
+    <nav class="md-nav" aria-label="4. Работа с изображениями {images}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -616,19 +642,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#frontmatter" class="md-nav__link">
+  <a href="#5-frontmatter-frontmatter" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Скрытые настройки (Frontmatter)
+        5. Скрытые настройки (Frontmatter) {frontmatter}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. Скрытые настройки (Frontmatter)">
+    <nav class="md-nav" aria-label="5. Скрытые настройки (Frontmatter) {frontmatter}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#frontmatter_1" class="md-nav__link">
+  <a href="#frontmatter" class="md-nav__link">
     <span class="md-ellipsis">
       
         Базовый frontmatter
@@ -655,15 +681,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
+  <a href="#6-license" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Лицензия и авторство
+        6. Лицензия и авторство {license}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="6. Лицензия и авторство">
+    <nav class="md-nav" aria-label="6. Лицензия и авторство {license}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -705,15 +731,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#browser-edit" class="md-nav__link">
+  <a href="#7-browser-edit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. Редактируем и создаём статьи через браузер (самый простой способ)
+        7. Редактируем и создаём статьи через браузер (самый простой способ) {browser-edit}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="7. Редактируем и создаём статьи через браузер (самый простой способ)">
+    <nav class="md-nav" aria-label="7. Редактируем и создаём статьи через браузер (самый простой способ) {browser-edit}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -766,10 +792,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#editors" class="md-nav__link">
+  <a href="#8-markdown-editors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Выбор редактора Markdown
+        8. Выбор редактора Markdown {editors}
       
     </span>
   </a>
@@ -777,15 +803,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#alternatives" class="md-nav__link">
+  <a href="#9-alternatives" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Альтернативные способы отправки материалов
+        9. Альтернативные способы отправки материалов {alternatives}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="9. Альтернативные способы отправки материалов">
+    <nav class="md-nav" aria-label="9. Альтернативные способы отправки материалов {alternatives}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -805,15 +831,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
+  <a href="#10-troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10. Что делать, если что-то сломалось?
+        10. Что делать, если что-то сломалось? {troubleshooting}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="10. Что делать, если что-то сломалось?">
+    <nav class="md-nav" aria-label="10. Что делать, если что-то сломалось? {troubleshooting}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -855,10 +881,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#contacts" class="md-nav__link">
+  <a href="#11-contacts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Куда обращаться за помощью
+        11. Куда обращаться за помощью {contacts}
       
     </span>
   </a>
@@ -892,18 +918,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
     
     
       
@@ -928,7 +942,7 @@
   <span class="md-ellipsis">
     
   
-    Лор
+    Организации
   
 
     
@@ -944,778 +958,6 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Лор
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../lore/documents/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Документы
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../lore/general/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Термины
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../lore/geography/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    География
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../lore/ideology/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Идеологии
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../lore/symbols/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Символы
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-        
-        
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../history/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    История
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    История
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../history/crimes/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Военные Преступления
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../history/events/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    События
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../history/operations/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Операции
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../history/revolutions/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Революции
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../history/wars/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Войны
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-        
-        
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../organisations/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Организации
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
     Организации
   
 
@@ -1723,20 +965,12 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-            
-              
                 
   
   
   
   
     
-    
-      
-        
-          
-        
-      
     
     
     
@@ -1754,14 +988,14 @@
   
   
   
-    <a href="../organisations/cults/" class="md-nav__link">
+    <a href="../organisations/authory/%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%82%D1%83%D1%80%D0%B0%20%281%20NE%29/" class="md-nav__link">
       
   
   
   <span class="md-ellipsis">
     
   
-    Культы, секты, религии
+    Органы власти
   
 
     
@@ -1789,12 +1023,6 @@
   
     
     
-      
-        
-          
-        
-      
-    
     
     
       
@@ -1811,235 +1039,7 @@
   
   
   
-    <a href="../organisations/military/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Военные структуры
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../organisations/organisations/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Организации
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../organisations/other/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Прочее
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../organisations/parties/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Партии
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../organisations/state/" class="md-nav__link">
+    <a href="../organisations/goverments/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%AD%D1%80%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F/" class="md-nav__link">
       
   
   
@@ -2074,11 +1074,56 @@
   
     
     
+    
+    
+      
+    
+    
       
         
-          
         
       
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../organisations/military/%D0%91%D0%B0%D1%82%D0%B0%D0%BB%D1%8C%D0%BE%D0%BD%20%22%D0%91%D0%B5%D1%80%D0%BD%D0%B2%D1%83%D0%B4%22/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Военизированные организации
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
     
     
     
@@ -2096,14 +1141,65 @@
   
   
   
-    <a href="../organisations/unions/" class="md-nav__link">
+    <a href="../organisations/parties/%D0%9A%D0%9F%D0%AD/" class="md-nav__link">
       
   
   
   <span class="md-ellipsis">
     
   
-    Союзы
+    Партии
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../organisations/unions/%D0%9A%D1%83%D0%BB%D1%8C%D1%82%20%D0%90%D0%B2%D0%B8%D0%BE%D1%80/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Кружки, коллективы, объединения
   
 
     
@@ -2138,13 +1234,382 @@
   
     
     
+    
+    
       
+        
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Термины
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Термины
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
       
         
+        
       
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../termins/flaseologisms/%D0%91%D0%B0%D1%88%D0%BD%D1%8F%20%D0%9C%D1%83%D1%87%D0%B0%D1%87%D0%B8/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Фразеологизмы и мемы
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../termins/ideology/%D0%91%D0%B5%D1%80%D0%BD%D0%B2%D1%83%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%AD%D1%80%D0%B8%D1%8F%20%28Eretz-Bernhudi%20aErie%29/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Идеологии, идеи, концепции
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../termins/terms/%D0%9F%D1%8F%D1%82%D0%B0%D1%8F%20%D0%92%D1%81%D0%B5%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BD%D0%B0%D1%8F/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Общие Термины
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    События
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    События
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../events/occasions/%D0%9C%D0%B0%D1%80%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D1%81%D1%8A%D0%B5%D0%B7%D0%B4/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Процессы и события
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../events/wars/%D0%91%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9D%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Войны, революции, восстания
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
     
     
     
@@ -2163,15 +1628,14 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <div class="md-nav__link md-nav__container">
-            <a href="../characters/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
   
   
   <span class="md-ellipsis">
     
   
-    Личности
+    Символы
   
 
     
@@ -2179,27 +1643,19 @@
   
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Личности
+    Символы
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
             
               
                 
@@ -2208,12 +1664,6 @@
   
   
     
-    
-      
-        
-          
-        
-      
     
     
     
@@ -2231,7 +1681,7 @@
   
   
   
-    <a href="../characters/eria/" class="md-nav__link">
+    <a href="../symbols/errlandika/%D0%93%D0%B8%D0%BC%D0%BD%20%D0%AD%D0%9D%D0%A1%D0%A0/" class="md-nav__link">
       
   
   
@@ -2253,6 +1703,996 @@
   
 
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Города
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Города
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../cities/errlandika/%D0%9B%D0%B0%D1%81%D0%BA%D0%B0%D0%BE/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Эррландия
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Личности
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Личности
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../characters/errlandika/ShiShak/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Эррландия
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Документы
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Документы
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documents/%22%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%20%D0%9E%D0%BC%D1%81%D0%BA%22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    "История Создания города Омск"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documents/Vstuplenie-v-Vojnu-07-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Вступление в Войну
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documents/%D0%9A%D0%9E%D0%9D%D0%A1%D0%A2%D0%98%D0%A2%D0%A3%D0%A6%D0%98%D0%AF%20%D0%AD%D0%A0%D0%9B%D0%AF%D0%9D%D0%94%D0%98%D0%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Конституция Эрляндии
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documents/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D0%B8%D1%8F%20%D0%9D%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%AD%D1%80%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D0%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Конституция Новой Эррландии
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documents/%D0%9B%D1%83%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%9F%D0%B0%D0%BB%D0%B0%D1%82%D0%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лунная Палата
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documents/%D0%9F%D0%BE%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%A2%D1%8F%D0%B6%D0%B5%D0%BB%D0%BE%D0%B9%20%D0%B8%20%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    По положению Тяжелой и Легкой промышленностей
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Литература
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Литература
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%92%D0%BB%D0%B0%D1%81%D1%82%D0%B2%D1%83%D0%B9%20%D0%AD%D1%80%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Властвуй Эррландия
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%92%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D1%8C%20%D0%AD%D1%80%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Восстань Эррландия
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%92%D1%82%D0%BE%D1%80%D0%BE%D0%B5%20%D1%81%D0%BE%D0%B1%D1%80%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D1%87%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Второе собрание соченений Петроглифа
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%93%D0%B4%D0%B5%20%D0%B1%D0%BE%D0%B5%D0%BF%D1%80%D0%B8%D0%BF%D0%B0%D1%81%D1%8B%3F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Где боеприпасы?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%94%D0%B0%D0%B9%D0%BD%D0%B8%D0%BA%D0%B5%D0%BD%20%D0%92%D1%81%D0%B5%D0%B3%D0%B4%D0%B0%20%D1%81%20%D1%82%D0%BE%D0%B1%D0%BE%D0%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Дайникен Всегда с тобой
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%BA%D0%B8%20%D0%A8%D0%B8%D0%B7%D0%BE%D1%84%D1%80%D0%B5%D0%BD%D0%B8%D0%BA%D0%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Записки Шизофреника
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%9C%D1%8B%20%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B5%20%D0%B3%D1%80%D0%B0%D0%B1%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%B4%D0%BD%D1%83%20%D0%B8%20%D1%82%D1%83%D0%B6%D0%B5%20%D0%B4%D1%83%D1%80%D1%83.../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Мы вместе грабили одну и туже дуру...
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%9C%D1%8B%20%D1%82%D0%BE%D0%B6%D0%B5%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D0%92%D0%BB%D0%B0%D1%81%D1%82%D1%8C%20%21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Мы тоже Советская Власть !
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%9D%D0%9A%D0%92%D0%94/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    НКВД
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%9D%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%AD%D1%80%D1%8B%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5%20%D0%BD%D0%B5%D1%82./" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Новой Эры больше нет.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%9F%D0%B0%D1%80%D1%82%D0%B8%D1%8F%20-%20%D0%BD%D0%B0%D1%88%20%D1%80%D1%83%D0%BB%D0%B5%D0%B2%D0%BE%D0%B9%21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Партия - наш рулевой!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20%D0%92%D0%B0%D0%B3%D0%BD%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Психоанализ Вагнера
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D0%AD%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Советская Эра
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F%20%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B3%D0%BB%D0%B8%D1%84%D0%B0%20%D0%A7%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20%D0%9C%D0%B0%D1%80%D1%82/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    "Черный Март"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%A1%D1%82%D0%B8%D1%85%2C%20%D0%BF%D1%80%D0%BE%20%D0%9F%D0%B0%D1%81%D0%BF%D0%BE%D1%80%D1%82%20%D0%AD%D0%A1%D0%A1%D0%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Стих, про Паспорт ЭССР
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%A1%D1%82%D0%B8%D1%88%D0%BA%D0%B8%20%D0%BF%D1%80%D0%BE%20%D0%B2%D1%81%D1%8F%D0%BA%D0%BE%D0%B5%20%D0%B3%D0%BE%D0%B2%D0%BD%D0%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Стишки про всякое говно
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../books/%D0%AD%D1%80%D0%B0-%D0%AD%D1%81%D0%B5%D1%80%D1%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Эра-Эсеры
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2353,15 +2793,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#markdown" class="md-nav__link">
+  <a href="#2-markdown-markdown" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Основы Markdown
+        2. Основы Markdown {markdown}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Основы Markdown">
+    <nav class="md-nav" aria-label="2. Основы Markdown {markdown}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2414,15 +2854,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#3-material-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Фишки нашего движка (Material)
+        3. Фишки нашего движка (Material) {features}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Фишки нашего движка (Material)">
+    <nav class="md-nav" aria-label="3. Фишки нашего движка (Material) {features}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2486,15 +2926,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#images" class="md-nav__link">
+  <a href="#4-images" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Работа с изображениями
+        4. Работа с изображениями {images}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Работа с изображениями">
+    <nav class="md-nav" aria-label="4. Работа с изображениями {images}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2547,19 +2987,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#frontmatter" class="md-nav__link">
+  <a href="#5-frontmatter-frontmatter" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Скрытые настройки (Frontmatter)
+        5. Скрытые настройки (Frontmatter) {frontmatter}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. Скрытые настройки (Frontmatter)">
+    <nav class="md-nav" aria-label="5. Скрытые настройки (Frontmatter) {frontmatter}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#frontmatter_1" class="md-nav__link">
+  <a href="#frontmatter" class="md-nav__link">
     <span class="md-ellipsis">
       
         Базовый frontmatter
@@ -2586,15 +3026,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
+  <a href="#6-license" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Лицензия и авторство
+        6. Лицензия и авторство {license}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="6. Лицензия и авторство">
+    <nav class="md-nav" aria-label="6. Лицензия и авторство {license}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2636,15 +3076,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#browser-edit" class="md-nav__link">
+  <a href="#7-browser-edit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. Редактируем и создаём статьи через браузер (самый простой способ)
+        7. Редактируем и создаём статьи через браузер (самый простой способ) {browser-edit}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="7. Редактируем и создаём статьи через браузер (самый простой способ)">
+    <nav class="md-nav" aria-label="7. Редактируем и создаём статьи через браузер (самый простой способ) {browser-edit}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2697,10 +3137,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#editors" class="md-nav__link">
+  <a href="#8-markdown-editors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Выбор редактора Markdown
+        8. Выбор редактора Markdown {editors}
       
     </span>
   </a>
@@ -2708,15 +3148,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#alternatives" class="md-nav__link">
+  <a href="#9-alternatives" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Альтернативные способы отправки материалов
+        9. Альтернативные способы отправки материалов {alternatives}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="9. Альтернативные способы отправки материалов">
+    <nav class="md-nav" aria-label="9. Альтернативные способы отправки материалов {alternatives}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2736,15 +3176,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
+  <a href="#10-troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10. Что делать, если что-то сломалось?
+        10. Что делать, если что-то сломалось? {troubleshooting}
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="10. Что делать, если что-то сломалось?">
+    <nav class="md-nav" aria-label="10. Что делать, если что-то сломалось? {troubleshooting}">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2786,10 +3226,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#contacts" class="md-nav__link">
+  <a href="#11-contacts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Куда обращаться за помощью
+        11. Куда обращаться за помощью {contacts}
       
     </span>
   </a>
@@ -2890,7 +3330,7 @@
 <h3 id="_5">Картинки<a class="headerlink" href="#_5" title="Ссылка на раздел">&para;</a></h3>
 <p>Все изображения кладите в папку <code>docs/images/</code>. Не создавайте отдельные папки для картинок внутри папок со статьями.</p>
 <hr />
-<h2 id="markdown">2. Основы Markdown<a class="headerlink" href="#markdown" title="Ссылка на раздел">&para;</a></h2>
+<h2 id="2-markdown-markdown">2. Основы Markdown {<strong class="hash">markdown</strong>}<a class="headerlink" href="#2-markdown-markdown" title="Ссылка на раздел">&para;</a></h2>
 <p>Наш движок использует язык разметки <strong>Markdown</strong>. Вот самые частые элементы:</p>
 <h3 id="_6">Заголовки<a class="headerlink" href="#_6" title="Ссылка на раздел">&para;</a></h3>
 <p>Используйте <code>#</code> для заголовков. Чем больше решёток, тем меньше заголовок.</p>
@@ -2918,7 +3358,7 @@
 </span></code></pre></div>
 <p><strong>Совет:</strong> При ссылке на другую статью используйте относительный путь. Если статья лежит в папке <code>lore/general</code>, а вы ссылаетесь на <code>characters/eria</code>, пишите <code>../../characters/eria/character.md</code>. <code>../</code> означают возврат на папку выше.</p>
 <hr />
-<h2 id="features">3. Фишки нашего движка (Material)<a class="headerlink" href="#features" title="Ссылка на раздел">&para;</a></h2>
+<h2 id="3-material-features">3. Фишки нашего движка (Material) {<strong class="hash">features</strong>}<a class="headerlink" href="#3-material-features" title="Ссылка на раздел">&para;</a></h2>
 <p>Наша Вики умеет больше, чем обычный текст. Используйте эти блоки, чтобы статьи выглядели лучше.</p>
 <h3 id="-admonitions">Блоки-предупреждения (Admonitions)<a class="headerlink" href="#-admonitions" title="Ссылка на раздел">&para;</a></h3>
 <p>Идеально для лора, спойлеров и важных заметок.</p>
@@ -3037,7 +3477,7 @@
 </ul>
 </div>
 <hr />
-<h2 id="images">4. Работа с изображениями<a class="headerlink" href="#images" title="Ссылка на раздел">&para;</a></h2>
+<h2 id="4-images">4. Работа с изображениями {<strong class="hash">images</strong>}<a class="headerlink" href="#4-images" title="Ссылка на раздел">&para;</a></h2>
 <h3 id="_11">Простая вставка<a class="headerlink" href="#_11" title="Ссылка на раздел">&para;</a></h3>
 <div class="language-markdown highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>![<span class="nt">Описание картинки</span>](<span class="na">../../images/my-image.jpg</span>)
 </span></code></pre></div>
@@ -3064,9 +3504,9 @@
 </span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>&lt;/div&gt;
 </span></code></pre></div>
 <hr />
-<h2 id="frontmatter">5. Скрытые настройки (Frontmatter)<a class="headerlink" href="#frontmatter" title="Ссылка на раздел">&para;</a></h2>
+<h2 id="5-frontmatter-frontmatter">5. Скрытые настройки (Frontmatter) {<strong class="hash">frontmatter</strong>}<a class="headerlink" href="#5-frontmatter-frontmatter" title="Ссылка на раздел">&para;</a></h2>
 <p>В самом верху каждого <code>.md</code> файла есть блок между тремя дефисами <code>---</code>. Это настройки страницы.</p>
-<h3 id="frontmatter_1">Базовый frontmatter<a class="headerlink" href="#frontmatter_1" title="Ссылка на раздел">&para;</a></h3>
+<h3 id="frontmatter">Базовый frontmatter<a class="headerlink" href="#frontmatter" title="Ссылка на раздел">&para;</a></h3>
 <div class="language-markdown highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>---
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>title: &quot;Название во вкладке браузера&quot;
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="gu">description: &quot;Краткое описание для поисковиков&quot;</span>
@@ -3087,7 +3527,7 @@
 </span></code></pre></div>
 <p>Учитывайте, что без <code>navigation</code> левое меню исчезнет.</p>
 <hr />
-<h2 id="license">6. Лицензия и авторство<a class="headerlink" href="#license" title="Ссылка на раздел">&para;</a></h2>
+<h2 id="6-license">6. Лицензия и авторство {<strong class="hash">license</strong>}<a class="headerlink" href="#6-license" title="Ссылка на раздел">&para;</a></h2>
 <p>Вся Большая Энциклопедия NewEra и Эррландии распространяется по лицензии <strong><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></strong>.</p>
 <h3 id="_16">Что это значит для авторов:<a class="headerlink" href="#_16" title="Ссылка на раздел">&para;</a></h3>
 <p>✅ <strong>Вы сохраняете авторство</strong> - ваше имя будет указано в истории Git<br />
@@ -3118,7 +3558,7 @@
 </span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>&lt;/small&gt;
 </span></code></pre></div>
 <hr />
-<h2 id="browser-edit">7. Редактируем и создаём статьи через браузер (самый простой способ)<a class="headerlink" href="#browser-edit" title="Ссылка на раздел">&para;</a></h2>
+<h2 id="7-browser-edit">7. Редактируем и создаём статьи через браузер (самый простой способ) {<strong class="hash">browser-edit</strong>}<a class="headerlink" href="#7-browser-edit" title="Ссылка на раздел">&para;</a></h2>
 <p>Вам не нужно устанавливать Git или разбираться в командной строке. Всё делается прямо в вашем браузере, а все изменения попадают к нам на проверку через <strong>Pull Request</strong> (это просто "предложение изменений", которое мы рассмотрим и, если всё хорошо, примем).</p>
 <h3 id="_19">Редактирование существующей статьи<a class="headerlink" href="#_19" title="Ссылка на раздел">&para;</a></h3>
 <ol>
@@ -3171,7 +3611,7 @@
 <h3 id="_22">Что, если я хочу добавить несколько файлов за раз?<a class="headerlink" href="#_22" title="Ссылка на раздел">&para;</a></h3>
 <p>Если вы правите много статей или добавляете целую коллекцию картинок, рекомендуем использовать <strong>GitHub Desktop</strong> или консоль. Подробные инструкции есть в <a href="https://docs.github.com/ru/desktop">официальной документации GitHub</a>.</p>
 <hr />
-<h2 id="editors">8. Выбор редактора Markdown<a class="headerlink" href="#editors" title="Ссылка на раздел">&para;</a></h2>
+<h2 id="8-markdown-editors">8. Выбор редактора Markdown {<strong class="hash">editors</strong>}<a class="headerlink" href="#8-markdown-editors" title="Ссылка на раздел">&para;</a></h2>
 <p>Если вы предпочитаете писать статьи офлайн, вот несколько удобных редакторов для разных систем:</p>
 <table>
 <thead>
@@ -3221,12 +3661,12 @@
 </table>
 <p>Для быстрых правок можно использовать любой текстовый редактор (Блокнот в Windows 11 уже поддерживает Markdown). Главное - сохранять файл с расширением <code>.md</code> и соблюдать наши правила оформления.</p>
 <hr />
-<h2 id="alternatives">9. Альтернативные способы отправки материалов<a class="headerlink" href="#alternatives" title="Ссылка на раздел">&para;</a></h2>
+<h2 id="9-alternatives">9. Альтернативные способы отправки материалов {<strong class="hash">alternatives</strong>}<a class="headerlink" href="#9-alternatives" title="Ссылка на раздел">&para;</a></h2>
 <p>Если вам неудобно работать с GitHub даже через браузер, вы можете отправить свою статью одним из следующих способов:</p>
 <h3 id="discord">Через Discord (для коротких заметок)<a class="headerlink" href="#discord" title="Ссылка на раздел">&para;</a></h3>
 <p>Вы можете прислать текст с картинками в нашем Discord сервере или лично владельцу энциклопедии. Мы сами оформим его в Markdown и опубликуем.</p>
 <hr />
-<h2 id="troubleshooting">10. Что делать, если что-то сломалось?<a class="headerlink" href="#troubleshooting" title="Ссылка на раздел">&para;</a></h2>
+<h2 id="10-troubleshooting">10. Что делать, если что-то сломалось? {<strong class="hash">troubleshooting</strong>}<a class="headerlink" href="#10-troubleshooting" title="Ссылка на раздел">&para;</a></h2>
 <h3 id="_23">Текст не форматируется?<a class="headerlink" href="#_23" title="Ссылка на раздел">&para;</a></h3>
 <p>Проверьте отступы. В Markdown пробелы имеют значение. Обычно это <strong>4 пробела</strong> для вложенности.</p>
 <h3 id="_24">Картинка не отображается?<a class="headerlink" href="#_24" title="Ссылка на раздел">&para;</a></h3>
@@ -3234,7 +3674,7 @@
 <h3 id="_25">Ссылка ведёт в никуда?<a class="headerlink" href="#_25" title="Ссылка на раздел">&para;</a></h3>
 <p>Убедитесб, что в конце ссылки стоит <code>.md</code> и путь написан правильно.</p>
 <hr />
-<h2 id="contacts">11. Куда обращаться за помощью<a class="headerlink" href="#contacts" title="Ссылка на раздел">&para;</a></h2>
+<h2 id="11-contacts">11. Куда обращаться за помощью {<strong class="hash">contacts</strong>}<a class="headerlink" href="#11-contacts" title="Ссылка на раздел">&para;</a></h2>
 <p>Если ты хочешь добавить что-то сложное или не можешь разобраться с вёрсткой:</p>
 <ul>
 <li>🐙 <strong>GitHub:</strong> Создай <a href="https://github.com/northfern/NewEraWiki/issues">Issue</a> в нашем репозитории с описанием проблемы.</li>
@@ -3271,11 +3711,26 @@
     <span class="md-icon" title="Последнее обновление">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="12 июля 2026 г. 13:44:05 UTC">12 июля 2026 г.</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="8 июля 2026 г. 20:59:04 UTC">8 июля 2026 г.</span>
   </span>
 
     
     
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Участники">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:lthaeshenl@gmail.com">northfern</a>
+    </nav>
+  </span>
+
     
     
   </aside>
@@ -3348,10 +3803,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.action.edit", "content.action.view", "navigation.sections", "navigation.indexes", "navigation.prune", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.action.edit", "content.action.view", "navigation.sections", "navigation.prune", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/nav-toggle.js"></script>
+      
+        <script src="../javascripts/author-banner.js"></script>
       
     
   </body>

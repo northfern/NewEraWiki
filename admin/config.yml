@@ -1,0 +1,143 @@
+backend:
+  name: github
+  repo: northfern/NewEraWiki
+  branch: main
+  app_id: ВАШ_CLIENT_ID            
+  # open_authoring: true           
+
+publish_mode: editorial_workflow   
+
+media_folder: "docs/images"   
+public_folder: "/images"      
+collections:
+
+  - name: books
+    label: "Книги"
+    label_singular: "Книга"
+    folder: "docs/books"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: author, label: "Автор текста", widget: string, required: false }
+      - { name: date, label: "Дата", widget: string, required: false,
+          hint: "В кавычках: \"12 мая 2026\"" }
+      - { name: source, label: "Источник переноса (URL)", widget: string, required: false }
+      - { name: body, label: "Текст", widget: markdown }
+
+  - name: characters
+    label: "Личности"
+    folder: "docs/characters"
+    nested: true                   
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - { name: title, label: "Имя", widget: string }
+      - { name: role, label: "Роль / род занятий", widget: string, required: false }
+      - { name: faction, label: "Фракция", widget: string, required: false }
+      - { name: author, label: "Автор текста", widget: string, required: false }
+      - { name: body, label: "Текст", widget: markdown }
+
+
+  - name: cities
+    label: "Города"
+    label_singular: "Город"
+    folder: "docs/cities"
+    nested: true
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: state, label: "Государство", widget: string, required: false }
+      - { name: author, label: "Автор текста", widget: string, required: false }
+      - { name: body, label: "Текст", widget: markdown }
+
+
+  - name: documents
+    label: "Документы"
+    label_singular: "Документ"
+    folder: "docs/documents"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: doc_type, label: "Тип документа", widget: select, required: false,
+          options: ["Конституция", "Постановление", "Закон", "Статья", "Меморандум", "Другое"] }
+      - { name: date, label: "Дата", widget: string, required: false }
+      - { name: author, label: "Автор текста", widget: string, required: false }
+      - { name: body, label: "Текст", widget: markdown }
+
+
+  - name: events
+    label: "События и войны"
+    label_singular: "Событие"
+    folder: "docs/events"
+    nested: true                    
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: title
+        label: "Название"
+        widget: string
+      - name: kind
+        label: "Тип"
+        widget: select
+        options:
+          - label: "Война / операция"
+            value: war
+          - label: "Политическое событие"
+            value: occasion
+      - name: period
+        label: "Период"
+        widget: string
+        required: false
+      - name: body
+        label: "Текст"
+        widget: markdown
+
+
+  - name: organisations
+    label: "Организации"
+    label_singular: "Организация"
+    folder: "docs/organisations"
+    nested: true                    
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: org_type, label: "Тип", widget: select,
+          options: ["Государство", "Орган власти", "Военная", "Партия", "Союз / учреждение", "Другое"] }
+      - { name: leader, label: "Лидер", widget: string, required: false }
+      - { name: author, label: "Автор текста", widget: string, required: false }
+      - { name: body, label: "Текст", widget: markdown }
+
+
+  - name: symbols
+    label: "Символика"
+    label_singular: "Символ"
+    folder: "docs/symbols"
+    nested: true
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: sym_type, label: "Тип", widget: select,
+          options: ["Флаг", "Гимн", "Эмблема", "Цвета", "Другое"] }
+      - { name: state, label: "Принадлежность", widget: string, required: false }
+      - { name: body, label: "Текст", widget: markdown }
+
+
+  - name: termins
+    label: "Термины и идеологии"
+    label_singular: "Термин"
+    folder: "docs/termins"
+    nested: true                    
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Термин", widget: string }
+      - { name: term_type, label: "Тип", widget: select,
+          options: ["Термин", "Идеология", "Фразеологизм"] }
+      - { name: body, label: "Текст", widget: markdown }
