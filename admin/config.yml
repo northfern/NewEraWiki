@@ -2,7 +2,7 @@ backend:
   name: github
   repo: northfern/NewEraWiki
   branch: main
-  app_id: Ov23liDrVuZE1xiZKyjQ          
+  app_id: "Ov23liDrVuZE1xiZKyjQ"
   open_authoring: true           
 
 publish_mode: editorial_workflow   
