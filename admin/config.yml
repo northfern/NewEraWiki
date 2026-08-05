@@ -29,7 +29,8 @@ collections:
   - name: characters
     label: "Личности"
     folder: "docs/characters"
-    nested: 100                   
+    nested:
+      depth: 100
     create: true
     slug: "{{slug}}"
     summary: "{{title}}"
@@ -45,7 +46,8 @@ collections:
     label: "Города"
     label_singular: "Город"
     folder: "docs/cities"
-    nested: 100
+    nested: 
+      depth: 100
     create: true
     slug: "{{slug}}"
     fields:
@@ -74,7 +76,8 @@ collections:
     label: "События и войны"
     label_singular: "Событие"
     folder: "docs/events"
-    nested: 100                    
+    nested: 
+      depth: 100
     create: true
     slug: "{{slug}}"
     fields:
@@ -102,7 +105,8 @@ collections:
     label: "Организации"
     label_singular: "Организация"
     folder: "docs/organisations"
-    nested: 100                    
+    nested: 
+      depth: 100
     create: true
     slug: "{{slug}}"
     fields:
@@ -118,7 +122,8 @@ collections:
     label: "Символика"
     label_singular: "Символ"
     folder: "docs/symbols"
-    nested: 100
+    nested: 
+      depth: 100
     create: true
     slug: "{{slug}}"
     fields:
@@ -133,7 +138,8 @@ collections:
     label: "Термины и идеологии"
     label_singular: "Термин"
     folder: "docs/termins"
-    nested: 100                    
+    nested: 
+      depth: 100
     create: true
     slug: "{{slug}}"
     fields:
