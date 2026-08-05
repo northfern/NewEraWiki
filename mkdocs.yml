@@ -69,7 +69,6 @@ plugins:
   - roamlinks
   - git-authors:
       enabled: !ENV [CI, false]
-      href: "https://github.com/northfern/NewEraWiki/commits/main/{file}"
   - git-revision-date-localized:
       type: date          # Формат даты
       locale: ru          # Русский язык
