@@ -1,0 +1,56 @@
+/* ============================================================
+КАСТОМНЫЕ CALLouts ДЛЯ ЛОРНОЙ ВИКИ (NewEra / Эррландия)
+Адаптировано для Obsidian с использованием нативных переменных
+============================================================ */
+
+/* ОДОБРЕНО (Зелёный) */
+.callout[data-callout="approved"] {
+    --callout-color: #4caf50;
+    --callout-icon: lucide-check-circle;
+}
+
+/* НА РАССМОТРЕНИИ (Оранжевый) */
+.callout[data-callout="pending"] {
+    --callout-color: #ff9800;
+    --callout-icon: lucide-clock;
+}
+
+/* ЕРЕТИЧЕСКОЕ (Красный) */
+.callout[data-callout="heretical"] {
+    --callout-color: #f44336;
+    --callout-icon: lucide-skull;
+}
+
+/* РАССЕКРЕЧЕНО (Фиолетовый) */
+.callout[data-callout="declassified"] {
+    --callout-color: #9c27b0;
+    --callout-icon: lucide-unlock;
+}
+
+/* ВРАЖЕСКАЯ ПРОПАГАНДА (Серо-синий) */
+.callout[data-callout="propaganda"] {
+    --callout-color: #607d8b;
+    --callout-icon: lucide-flag;
+}
+
+/* ЗААРХИВИРОВАНО (Коричневый) */
+.callout[data-callout="archived"] {
+    --callout-color: #795548;
+    --callout-icon: lucide-archive;
+}
+
+/* ============================================================
+ДОПОЛНИТЕЛЬНАЯ СТИЛИЗАЦИЯ (Опционально)
+Делает заголовок callout чуть более выразительным
+============================================================ */
+.callout[data-callout="approved"] > .callout-title,
+.callout[data-callout="pending"] > .callout-title,
+.callout[data-callout="heretical"] > .callout-title,
+.callout[data-callout="declassified"] > .callout-title,
+.callout[data-callout="propaganda"] > .callout-title,
+.callout[data-callout="archived"] > .callout-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.9em;
+}

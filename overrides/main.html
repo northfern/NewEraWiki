@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <!-- Авторство: передаём из frontmatter в meta-теги -->
+  {% if page.meta and page.meta.author %}
+    <meta name="article-author" content="{{ page.meta.author | e }}">
+  {% endif %}
+  {% if page.meta and page.meta.date %}
+    <meta name="article-date" content="{{ page.meta.date | e }}">
+  {% endif %}
+  {% if page.meta and page.meta.source %}
+    <meta name="article-source" content="{{ page.meta.source | e }}">
+  {% endif %}
+
+  <!-- Скрытие сайдбара без мигания -->
+  <script>
+    if (localStorage.getItem("nav-hidden") === "true") {
+      document.documentElement.classList.add("nav-hidden");
+    }
+  </script>
+  <style>
+    @media screen and (min-width: 76.25em) {
+      .nav-hidden .md-sidebar--primary {
+        margin-left: -12.1rem;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .nav-hidden .md-sidebar--secondary {
+        width: 12.1rem;
+        flex-shrink: 0;
+      }
+    }
+  </style>
+{% endblock %}

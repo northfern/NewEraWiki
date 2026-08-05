@@ -14,10 +14,14 @@ copyright: >
   · 2026 Большая Энциклопедия NewEra и Эррландии
 
 extra_css:
-  - stylesheets/custom.css
-
+  - stylesheets/custom.css  
+extra_javascript:
+  - javascripts/nav-toggle.js
+  - javascripts/author-banner.js   # ← добавить
+  
 theme:
   name: material
+  custom_dir: overrides
   language: ru
   font:
     text: Inter
@@ -51,7 +55,6 @@ theme:
     - content.action.edit
     - content.action.view
     - navigation.sections
-    - navigation.indexes
     - navigation.prune
     - navigation.top
     - search.highlight
@@ -62,20 +65,29 @@ theme:
 plugins:
   - search
   - awesome-pages
+  - obsidian-support
+  - roamlinks
+  - git-authors:
+      enabled: !ENV [CI, false]
+      href: "https://github.com/northfern/NewEraWiki/commits/main/{file}"
   - git-revision-date-localized:
       type: date          # Формат даты
       locale: ru          # Русский язык
       fallback_to_build_date: true  # Если Git недоступен
-
 markdown_extensions:
   - toc:
       permalink: true
       permalink_title: Ссылка на раздел
   - admonition
+  - footnotes
   - pymdownx.details
   - attr_list
   - md_in_html
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
