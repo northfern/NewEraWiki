@@ -11,13 +11,14 @@ copyright: >
     <img src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" alt="CC BY-SA 4.0" style="vertical-align: middle; margin-right: 4px;">
     CC BY-SA 4.0
   </a>
-  · 2026 Большая Энциклопедия NewEra и Эррландии
+  · 2026 Большая Энциклопедия NewEra и Эррландии (16+). <u><a href="/NewEraWiki/legal/">Правовая информация</a></u>
 
 extra_css:
   - stylesheets/custom.css  
 extra_javascript:
   - javascripts/nav-toggle.js
-  - javascripts/author-banner.js   # ← добавить
+  - javascripts/author-banner.js
+  - javascripts/cms-edit.js
   
 theme:
   name: material
@@ -57,6 +58,7 @@ theme:
     - navigation.sections
     - navigation.prune
     - navigation.top
+    - navigation.tabs
     - search.highlight
     - search.suggest
     - content.code.copy
@@ -64,6 +66,15 @@ theme:
 
 plugins:
   - search
+  - blog:
+      pagination_per_page: 5
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: "date"
+      categories:
+        - categories
+        - tags
   - awesome-pages
   - obsidian-support
   - roamlinks
@@ -105,3 +116,6 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/pvYxRYx5Sy
       name: Discord
+    - icon: material/fountain-pen
+      link: /NewEraWiki/admin/
+      name: Редакция (Decap CMS)

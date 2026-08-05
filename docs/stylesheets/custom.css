@@ -148,8 +148,8 @@
 /* Кнопка переключения */
 .nav-toggle {
     position: fixed;
-    left: 10px;
-    top: 80px;
+    left: 110px;
+    top: 62px;
     z-index: 1000;
     background: var(--md-primary-fg-color);
     color: var(--md-primary-bg-color);
@@ -255,4 +255,35 @@
 }
 [data-md-color-scheme="slate"] .author-banner {
     background: var(--md-default-bg-color--darker);
+}
+
+/* ============================================================
+НЕЙТРАЛЬНЫЕ НАВИГАЦИОННЫЕ ВКЛАДКИ (navigation.tabs)
+============================================================ */
+.md-tabs {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-tabs__link {
+  color: var(--md-default-fg-color--light);
+  opacity: 1;
+  transition: color 0.2s ease;
+}
+
+.md-tabs__link:hover {
+  color: var(--md-accent-fg-color);
+}
+
+.md-tabs__item--active .md-tabs__link {
+  color: var(--md-default-fg-color);
+  font-weight: 600;
+}
+
+/* Мобильная адаптация */
+@media screen and (max-width: 76.1875em) {
+  .md-tabs {
+    display: none;
+  }
 }

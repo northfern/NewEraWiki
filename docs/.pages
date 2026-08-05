@@ -1,11 +1,15 @@
 nav:
-  - index.md
-  - contributing.md
-  - organisations
-  - termins
-  - events
-  - symbols
-  - cities
-  - characters
-  - documents
-  - books
+  - Главная:
+    - index.md
+    - contributing.md
+    - legal.md
+  - Энциклопедия:
+    - organisations
+    - termins
+    - events
+    - symbols
+    - cities
+    - characters
+    - documents
+    - books
+  - Новости: blog
