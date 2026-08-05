@@ -13,9 +13,10 @@ media_folder: "docs/images"
 public_folder: "/images"
 
 slug:
-  encoding: ascii
+  encoding: "unicode"      # сохраняет кириллицу, но санитизирует пробелы
   clean_accents: true
-
+  sanitize_replacement: "-"
+  
 collections:
   - name: books
     label: "Книги"
