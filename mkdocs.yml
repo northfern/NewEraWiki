@@ -22,7 +22,6 @@ extra_javascript:
   
 theme:
   name: material
-  custom_dir: overrides
   language: ru
   font:
     text: Inter
@@ -57,8 +56,8 @@ theme:
     - content.action.view
     - navigation.sections
     - navigation.prune
-    - navigation.top
-    - navigation.tabs
+    #- navigation.top
+    #- navigation.tabs
     - search.highlight
     - search.suggest
     - content.code.copy
