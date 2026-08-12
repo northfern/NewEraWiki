@@ -1,6 +1,6 @@
 /* ============================================================
-   ПЕРЕКЛЮЧЕНИЕ ИЗОБРАЖЕНИЙ ПО ТЕМЕ
-   ============================================================ */
+ПЕРЕКЛЮЧЕНИЕ ИЗОБРАЖЕНИЙ ПО ТЕМЕ
+============================================================ */
 .theme-light,
 .theme-dark {
   display: none;
@@ -19,16 +19,17 @@
 }
 
 /* ============================================================
-   СКРЫТИЕ НАЗВАНИЯ САЙТА В ЛЕВОМ МЕНЮ
-   ============================================================ */
+СКРЫТИЕ НАЗВАНИЯ САЙТА В ЛЕВОМ МЕНЮ
+============================================================ */
 .md-nav--primary .md-nav__title[for="__drawer"] {
   display: none;
 }
 
 /* ============================================================
-   НЕЙТРАЛЬНАЯ ШАПКА И ВКЛАДКИ
-   ============================================================ */
-.md-header {
+НЕЙТРАЛЬНАЯ ШАПКА
+============================================================ */
+.md-header,
+.md-header--shadow {
   background-color: var(--md-default-bg-color);
   color: var(--md-default-fg-color);
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
@@ -44,91 +45,39 @@
   color: var(--md-default-fg-color);
 }
 
+/* Если нужно сделать нейтральными ещё и вкладки */
+.md-tabs {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
 /* ============================================================
-КОНТРАСТНЫЙ ПОИСК (с видимой границей)
+ПОИСК
 ============================================================ */
 .md-search__input {
-    background-color: transparent;
-    color: var(--md-default-fg-color);
-    border: 0px solid var(--md-default-fg-color--lightest); /* Видимая граница */
-    border-radius: 4px;
+  background-color: transparent;
+  color: var(--md-default-fg-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .md-search__input::placeholder {
-    color: var(--md-default-fg-color--light);
+  color: var(--md-default-fg-color--light);
 }
 
 .md-search__input:hover {
-    background-color: var(--md-default-bg-color--lighter);
-    border: 1px solid var(--md-default-fg-color--lighter);
+  background-color: var(--md-default-bg-color--lighter);
+  border-color: var(--md-default-fg-color--lighter);
+}
+
+.md-search__input:focus-visible {
+  border-color: var(--md-primary-fg-color);
 }
 
 /* ============================================================
-   УЛУЧШЕННАЯ ЧИТАЕМОСТЬ
-   ============================================================ */
-.md-typeset {
-  line-height: 1.7;
-}
-
-.md-typeset p {
-  margin-bottom: 1.5em;
-}
-
-/* ============================================================
-   АТМОСФЕРНЫЕ ЦИТАТЫ
-   ============================================================ */
-.md-typeset blockquote {
-  border-left: 4px solid var(--md-accent-fg-color);
-  background: var(--md-default-bg-color--lighter);
-  padding: 0.5em 1em;
-  font-style: italic;
-  border-radius: 0 4px 4px 0;
-}
-
-[data-md-color-scheme="slate"] .md-typeset blockquote {
-  background: var(--md-default-bg-color--darker);
-}
-
-/* ============================================================
-   УЛУЧШЕННЫЕ ТАБЛИЦЫ
-   ============================================================ */
-.md-typeset table:not([class]) {
-  font-size: 0.9rem;
-}
-
-.md-typeset table:not([class]) th {
-  background: var(--md-primary-fg-color);
-  color: var(--md-default-bg-color);
-  font-weight: 600;
-}
-
-.md-typeset table:not([class]) tr:nth-child(even) {
-  background: var(--md-default-bg-color--lighter);
-}
-
-[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
-  background: var(--md-default-bg-color--darker);
-}
-
-/* ============================================================
-   КАРТОЧКИ
-   ============================================================ */
-.md-typeset .grid.cards > ul > li:hover {
-  border-color: var(--md-accent-fg-color);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: all 0.2s ease;
-}
-
-.md-typeset .grid.cards ul li p {
-  margin: 0.5em 0;
-}
-
-/* ============================================================
-   СТИЛИЗАЦИЯ ЗАГОЛОВКОВ СЕКЦИЙ (navigation.sections)
-   ============================================================ */
-
-/* Базовый стиль заголовка секции */
+СТИЛИЗАЦИЯ ЗАГОЛОВКОВ СЕКЦИЙ (navigation.sections)
+============================================================ */
 .md-nav__item--section > .md-nav__link {
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
   padding-bottom: 0.4em;
@@ -142,148 +91,45 @@
 }
 
 /* ============================================================
-СКРЫТИЕ САЙДБАРА (анимация + полное освобождение места)
-============================================================ */
-
-/* Кнопка переключения */
-.nav-toggle {
-    position: fixed;
-    left: 110px;
-    top: 62px;
-    z-index: 1000;
-    background: var(--md-primary-fg-color);
-    color: var(--md-primary-bg-color);
-    border: none;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-.nav-toggle:hover {
-    background: var(--md-accent-fg-color);
-    transform: scale(1.1);
-}
-
-/* Анимация только на десктопе (не трогаем мобильный drawer) */
-@media screen and (min-width: 76.25em) {
-
-    /* Плавный выезд + растворение */
-    .md-sidebar--primary {
-        transition:
-            margin-left 0.3s ease,
-            opacity 0.3s ease,
-            visibility 0s linear 0s;
-    }
-
-    /* Скрытое состояние: панель уезжает и ОСВОБОЖДАЕТ место */
-    .nav-hidden .md-sidebar--primary {
-        margin-left: -12.1rem;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transition:
-            margin-left 0.3s ease,
-            opacity 0.3s ease,
-            visibility 0s linear 0.3s;
-    }
-
-    /* Контент занимает освободившееся место */
-    .nav-hidden .md-content {
-        max-width: 46rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .nav-hidden .md-main__inner {
-        margin-left: 0;
-        max-width: none;
-    }
-
-    /* Правая панель не растягивается */
-    .nav-hidden .md-sidebar--secondary {
-        width: 12.1rem !important;
-        max-width: 12.1rem !important;
-        flex-shrink: 0 !important;
-    }
-}
-
-/* На мобильных кнопка не нужна */
-@media screen and (max-width: 76.1875em) {
-    .nav-toggle {
-        display: none;
-    }
-}
-
-/* ============================================================
 ЦЕНТРОВКА ЭЛЕМЕНТОВ
 ============================================================ */
 .md-typeset .center {
-    text-align: center !important;
-    display: block !important;
+  text-align: center !important;
+  display: block !important;
 }
+
 .md-typeset img.center-img {
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /* ============================================================
 БАННЕР АВТОРСТВА (author / source из frontmatter)
 ============================================================ */
 .author-banner {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.4em;
-    margin: 0 0 1.4em 0;
-    padding: 0.55em 1em;
-    border-left: 2px solid var(--md-accent-fg-color);
-    background: var(--md-default-bg-color--lighter);
-    border-radius: 0 4px 4px 0;
-    font-size: 0.8rem;
-    color: var(--md-default-fg-color--light);
-}
-.author-banner strong {
-    color: var(--md-default-fg-color);
-}
-.author-banner a {
-    word-break: break-all;
-}
-[data-md-color-scheme="slate"] .author-banner {
-    background: var(--md-default-bg-color--darker);
-}
-
-/* ============================================================
-НЕЙТРАЛЬНЫЕ НАВИГАЦИОННЫЕ ВКЛАДКИ (navigation.tabs)
-============================================================ */
-.md-tabs {
-  background-color: var(--md-default-bg-color);
-  color: var(--md-default-fg-color);
-  border-bottom: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.md-tabs__link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4em;
+  margin: 0 0 1.4em 0;
+  padding: 0.55em 1em;
+  border-left: 2px solid var(--md-accent-fg-color);
+  background: var(--md-default-bg-color--lighter);
+  border-radius: 0 4px 4px 0;
+  font-size: 0.8rem;
   color: var(--md-default-fg-color--light);
-  opacity: 1;
-  transition: color 0.2s ease;
 }
 
-.md-tabs__link:hover {
-  color: var(--md-accent-fg-color);
-}
-
-.md-tabs__item--active .md-tabs__link {
+.author-banner strong {
   color: var(--md-default-fg-color);
-  font-weight: 600;
 }
 
-/* Мобильная адаптация */
-@media screen and (max-width: 76.1875em) {
-  .md-tabs {
-    display: none;
-  }
+.author-banner a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+[data-md-color-scheme="slate"] .author-banner {
+  background: var(--md-default-bg-color--darker, var(--md-default-bg-color--lighter));
 }
