@@ -18,6 +18,167 @@ slug:
   sanitize_replacement: "-"
   
 collections:
+  - name: main
+    label: "Главная"
+    folder: "docs"
+    create: false
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - name: title
+        label: "Название"
+        widget: string
+      - name: body
+        label: "Текст"
+        widget: markdown
+
+  - name: authory
+    label: "Органы власти"
+    label_singular: "Орган власти"
+    folder: "docs/organisations/authory"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: body, label: "Текст", widget: markdown }
+      
+  - name: goverments
+    label: "Государства"
+    label_singular: "Государство"
+    folder: "docs/organisations/goverments"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: body, label: "Текст", widget: markdown }
+
+  - name: military
+    label: "Военные организации"
+    label_singular: "Военная организация"
+    folder: "docs/organisations/military"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: body, label: "Текст", widget: markdown }
+
+  - name: parties
+    label: "Партии"
+    label_singular: "Партия"
+    folder: "docs/organisations/parties"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: body, label: "Текст", widget: markdown }
+
+  - name: unions
+    label: "Кружки, коллективы, объединения"
+    label_singular: "Организация"
+    folder: "docs/organisations/unions"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: body, label: "Текст", widget: markdown }
+
+  - name: flaseologisms
+    label: "Фразеологизмы"
+    label_singular: "Фразеологизм"
+    folder: "docs/termins/flaseologisms"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: body, label: "Текст", widget: markdown }
+
+  - name: ideology
+    label: "Идеологии"
+    label_singular: "Идеология"
+    folder: "docs/termins/ideology"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: body, label: "Текст", widget: markdown }
+
+  - name: terms
+    label: "Термины"
+    label_singular: "Термин"
+    folder: "docs/termins/terms"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: body, label: "Текст", widget: markdown }
+ 
+  - name: occasions
+    label: "Процессы и события"
+    label_singular: "Событие"
+    folder: "docs/events/occasions"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: title
+        label: "Название"
+        widget: string
+      - name: body
+        label: "Текст"
+        widget: markdown
+
+  - name: wars
+    label: "Войны, революции, восстания"
+    label_singular: "Война"
+    folder: "docs/events/wars"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: title
+        label: "Название"
+        widget: string
+      - name: body
+        label: "Текст"
+        widget: markdown
+ 
+  - name: cities
+    label: "Города"
+    label_singular: "Город"
+    folder: "docs/cities"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: title
+        label: "Название"
+        widget: string
+      - name: body
+        label: "Текст"
+        widget: markdown
+ 
+  - name: symbols
+    label: "Символика"
+    label_singular: "Символ"
+    folder: "docs/symbols"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: "Название", widget: string }
+      - { name: body, label: "Текст", widget: markdown }
+ 
+  - name: personas
+    label: "Личности"
+    label_singular: "Личность"
+    folder: "docs/personas"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - name: title
+        label: "Название"
+        widget: string
+      - name: body
+        label: "Текст"
+        widget: markdown
+ 
   - name: books
     label: "Книги"
     label_singular: "Книга"
@@ -33,31 +194,6 @@ collections:
       - { name: source, label: "Источник переноса (URL)", widget: string, required: false }
       - { name: body, label: "Текст", widget: markdown }
 
-  - name: characters
-    label: "Личности"
-    folder: "docs/characters"
-    create: true
-    slug: "{{slug}}"
-    summary: "{{title}}"
-    fields:
-      - { name: title, label: "Имя", widget: string }
-      - { name: role, label: "Роль / род занятий", widget: string, required: false }
-      - { name: faction, label: "Фракция", widget: string, required: false }
-      - { name: author, label: "Автор текста", widget: string, required: false }
-      - { name: body, label: "Текст", widget: markdown }
-
-  - name: cities
-    label: "Города"
-    label_singular: "Город"
-    folder: "docs/cities"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: title, label: "Название", widget: string }
-      - { name: state, label: "Государство", widget: string, required: false }
-      - { name: author, label: "Автор текста", widget: string, required: false }
-      - { name: body, label: "Текст", widget: markdown }
-
   - name: documents
     label: "Документы"
     label_singular: "Документ"
@@ -66,71 +202,6 @@ collections:
     slug: "{{slug}}"
     fields:
       - { name: title, label: "Название", widget: string }
-      - { name: doc_type, label: "Тип документа", widget: select, required: false,
-          options: ["Конституция", "Постановление", "Закон", "Статья", "Меморандум", "Другое"] }
       - { name: date, label: "Дата", widget: string, required: false }
       - { name: author, label: "Автор текста", widget: string, required: false }
-      - { name: body, label: "Текст", widget: markdown }
-
-  - name: events
-    label: "События и войны"
-    label_singular: "Событие"
-    folder: "docs/events"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - name: title
-        label: "Название"
-        widget: string
-      - name: kind
-        label: "Тип"
-        widget: select
-        options:
-          - { label: "Война / операция", value: war }
-          - { label: "Политическое событие", value: occasion }
-      - name: period
-        label: "Период"
-        widget: string
-        required: false
-      - name: body
-        label: "Текст"
-        widget: markdown
-
-  - name: organisations
-    label: "Организации"
-    label_singular: "Организация"
-    folder: "docs/organisations"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: title, label: "Название", widget: string }
-      - { name: org_type, label: "Тип", widget: select,
-          options: ["Государство", "Орган власти", "Военная", "Партия", "Союз / учреждение", "Другое"] }
-      - { name: leader, label: "Лидер", widget: string, required: false }
-      - { name: author, label: "Автор текста", widget: string, required: false }
-      - { name: body, label: "Текст", widget: markdown }
-
-  - name: symbols
-    label: "Символика"
-    label_singular: "Символ"
-    folder: "docs/symbols"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: title, label: "Название", widget: string }
-      - { name: sym_type, label: "Тип", widget: select,
-          options: ["Флаг", "Гимн", "Эмблема", "Цвета", "Другое"] }
-      - { name: state, label: "Принадлежность", widget: string, required: false }
-      - { name: body, label: "Текст", widget: markdown }
-
-  - name: termins
-    label: "Термины и идеологии"
-    label_singular: "Термин"
-    folder: "docs/termins"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: title, label: "Термин", widget: string }
-      - { name: term_type, label: "Тип", widget: select,
-          options: ["Термин", "Идеология", "Фразеологизм"] }
       - { name: body, label: "Текст", widget: markdown }
