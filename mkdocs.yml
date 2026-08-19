@@ -55,9 +55,7 @@ theme:
     - content.action.edit
     - content.action.view
     - navigation.sections
-    - navigation.prune
-    #- navigation.top
-    #- navigation.tabs
+#   - navigation.prune
     - search.highlight
     - search.suggest
     - content.code.copy
