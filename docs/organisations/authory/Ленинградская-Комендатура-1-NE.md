@@ -8,7 +8,7 @@ title: Ленинградская Комендатура
 
 * * *
 
-![[leningrad banner.png]]{ .center-img }
+![leningrad banner](leningrad%20banner.png){ .center-img loading=lazy }
 
 Баннер Ленинграда. Стал одним из символов революционных изменений на сервере.
 {: .center }

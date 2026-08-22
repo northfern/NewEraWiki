@@ -9,7 +9,7 @@ author: ТА СФГ
 
 * * *
 
-![[https_Liss.png]]{.center-img}
+![https_Liss](https_Liss.png){ .center-img loading=lazy }
 
 * * *
 

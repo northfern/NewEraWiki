@@ -11,25 +11,4 @@
   {% if page.meta and page.meta.source %}
     <meta name="article-source" content="{{ page.meta.source | e }}">
   {% endif %}
-
-  <!-- Скрытие сайдбара без мигания -->
-  <script>
-    if (localStorage.getItem("nav-hidden") === "true") {
-      document.documentElement.classList.add("nav-hidden");
-    }
-  </script>
-  <style>
-    @media screen and (min-width: 76.25em) {
-      .nav-hidden .md-sidebar--primary {
-        margin-left: -12.1rem;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-      }
-      .nav-hidden .md-sidebar--secondary {
-        width: 12.1rem;
-        flex-shrink: 0;
-      }
-    }
-  </style>
 {% endblock %}

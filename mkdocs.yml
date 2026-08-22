@@ -16,12 +16,12 @@ copyright: >
 extra_css:
   - stylesheets/custom.css  
 extra_javascript:
-  - javascripts/nav-toggle.js
   - javascripts/author-banner.js
   - javascripts/cms-edit.js
   
 theme:
   name: material
+  custom_dir: overrides
   language: ru
   font:
     text: Inter
